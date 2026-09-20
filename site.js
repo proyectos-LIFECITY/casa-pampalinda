@@ -10,7 +10,7 @@ $$('a[data-portal]').forEach(a => a.href = `https://proyectos-lifecity.github.io
 
 // ---------- Formulario corto de lead (se reutiliza en portada, ventana emergente y pie)
 const leadForm = (origen, titulo, sub) => `<form class="lead" data-origen="${origen}"><h3>${titulo}</h3><p>${sub}</p>
-<input name="nombre" placeholder="Tu nombre" required autocomplete="name"><input name="celular" type="tel" placeholder="Celular / WhatsApp" required autocomplete="tel" pattern="[0-9+ ()-]{7,}"><input name="correo" type="email" placeholder="Correo" required autocomplete="email">
+<input name="nombre" placeholder="Tu nombre" required autocomplete="name"><input name="celular" type="tel" placeholder="Celular / WhatsApp" required autocomplete="tel" pattern="[0-9+ ()\-]{7,}"><input name="correo" type="email" placeholder="Correo" required autocomplete="email">
 <label class="ck"><input type="checkbox" required> Autorizo el tratamiento de mis datos para ser contactado sobre este proyecto (Ley 1581 de 2012).</label>
 <button class="btn btn-primary" type="submit">Quiero el dossier</button><small>Sin costo ni compromiso · Tus datos no se comparten con terceros</small><div class="msg"></div></form>`;
 const isLanding = !!$('.hero'), noLead = !!$('.checkout');
