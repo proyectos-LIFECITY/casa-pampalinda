@@ -200,3 +200,25 @@ footer p+p{margin-top:10px}
 td.y{color:var(--terra);font-weight:600;text-align:center}td.n{color:#b9b1a3;text-align:center}th.c{text-align:center}
 
 .cloud{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:40px}.cloud figure{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px}.cloud img{width:100%;aspect-ratio:1;object-fit:contain}.cloud figcaption{font-size:.8rem;color:var(--muted);padding:6px 4px 0}
+
+/* ===== Captación de leads ===== */
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(300px,400px);gap:clamp(24px,5vw,70px);align-items:end}
+.hero-grid .hero-facts{margin-top:36px}
+@media(max-width:960px){.hero-grid{grid-template-columns:1fr}.hero{padding-top:110px}}
+form.lead{background:var(--paper);color:var(--ink);border-radius:14px;padding:28px 26px;display:grid;gap:12px;box-shadow:0 24px 60px rgba(0,0,0,.28)}
+form.lead h3{font-size:1.75rem;line-height:1.1}form.lead p{font-size:.93rem;color:var(--muted);margin:0 0 4px;max-width:none;opacity:1}
+form.lead input:not([type=checkbox]){padding:14px 16px;border:1px solid var(--line);border-radius:8px;font-size:1rem;background:#fff;width:100%}
+form.lead .ck{display:flex;gap:9px;font-size:.76rem;color:var(--muted);text-transform:none;letter-spacing:0;line-height:1.4;align-items:flex-start}form.lead .ck input{width:auto;margin-top:3px}
+form.lead .btn{justify-content:center;width:100%;font-size:1rem;padding:17px}form.lead small{text-align:center;color:var(--muted);font-size:.76rem}
+form.lead .msg{margin:0}
+.modal{position:fixed;inset:0;background:rgba(15,20,16,.72);z-index:120;display:none;place-items:center;padding:18px;backdrop-filter:blur(3px)}.modal.on{display:grid}
+.modal-box{position:relative;width:min(440px,100%)}.modal-x{position:absolute;right:12px;top:10px;border:0;background:none;font-size:1.1rem;cursor:pointer;color:var(--muted);z-index:2}
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(255,253,248,.97);border-top:1px solid var(--line);padding:10px 20px;display:flex;gap:14px;align-items:center;justify-content:center;transform:translateY(110%);transition:.3s;backdrop-filter:blur(8px)}
+.sticky-cta.on{transform:none}.sticky-cta span{font-size:.9rem;color:var(--muted)}.sticky-cta .btn{padding:12px 24px}
+@media(max-width:640px){.sticky-cta span{display:none}.sticky-cta .btn{width:100%;justify-content:center}}
+body{padding-bottom:0}footer{padding-bottom:110px}
+.cta-block{background:var(--green-dark);color:#f3efe4;border-radius:14px;padding:clamp(28px,5vw,54px);display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-top:60px}
+.cta-block h3{font-size:clamp(1.6rem,3vw,2.3rem);max-width:22ch}.cta-block p{color:#d8cdc3;margin-top:8px;max-width:50ch}
+/* Plano técnico + modelo 3D */
+.plano{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px;margin-top:40px}.plano figure{background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px;cursor:zoom-in}.plano img{width:100%}
+.plano figcaption{font-size:.8rem;color:var(--muted);padding:6px 4px 2px}
